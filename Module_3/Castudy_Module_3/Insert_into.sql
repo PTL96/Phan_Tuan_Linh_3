@@ -87,7 +87,7 @@ INSERT INTO `nhan_vien_furuma`.`hop_dong` (`ngay_lam_hop_dong`, `ngay_ket_thuc`,
 ('2021-05-25', '2021-05-27', 0, 7, 10, 1);
 
 SELECT * FROM nhan_vien_furuma.hop_dong_chi_tiet;
-INSERT INTO `nhan_vien_furuma`.`hop_dong_chi_tiet` (`ma_hop_dong`, `ma_dich_vu_di_kem`, `so_luong`) VALUES (5, 2, 4),
+INSERT INTO `nhan_vien_furuma`.`hop_dong_chi_tiet`(`ma_hop_dong`, `ma_dich_vu_di_kem`, `so_luong`) VALUES (5, 2, 4),
 (8, 2, 5),
 (15, 2, 6),
 (1, 3, 1),
