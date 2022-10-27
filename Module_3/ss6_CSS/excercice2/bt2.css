@@ -1,0 +1,27 @@
+div{
+
+}
+h1{
+    background: rgba(0,0,0,0.5);
+    color: firebrick;
+}
+p{
+    color: crimson;
+background: rgba(0,0,0,0.5);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 700px;
+    text-indent: 50px;
+}
+a{
+color: blueviolet
+}
+body{
+    background-image: url("https://tophinhanhdep.com/wp-content/uploads/2021/10/Vietnam-4K-Wallpapers.jpg");
+height: auto;
+    width: auto;
+}
+h4{
+    color: crimson;
+}
