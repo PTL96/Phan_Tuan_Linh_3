@@ -1,0 +1,40 @@
+body {
+    font-family: Verdana, sans-serif;
+    font-size: 0.9em;
+}
+header{
+    height: 100px;
+    width: 100%;
+    background-image: url("https://nguoilambao.vn/upload_images/images/1439556265421-thoi-su-dung-chung-toi-va-trua%20(FILEminimizer).jpg");
+}
+h1{
+font-size: 50px;
+    color:red ;
+}
+h2{
+    background: cadetblue;
+    height: 30px;
+    width: 80%;
+}
+
+nav{
+background: green;
+    color: black;
+    height: 15%;
+    width: 80%;
+}
+#up{
+    background: #84c754;
+    height: 300px;
+    width: 80%;
+}
+#dow{
+    background: #84c754;
+    width: 80%;
+    height: 300px;
+}
+footer{
+    background: cadetblue;
+    width: 80%;
+    height: 35px;
+}
