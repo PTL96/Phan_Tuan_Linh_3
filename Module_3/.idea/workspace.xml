@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9937b04d-4a78-4f14-ae8a-4150ed51b7d2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../src/ss11_MVC/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../src/ss11_MVC/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/ss11_MVC/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../src/ss11_MVC/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/ss11_MVC/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../src/ss11_MVC/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/ss11_MVC/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../src/ss11_MVC/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/ss11_MVC/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../src/ss11_MVC/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/ss11_MVC/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../src/ss11_MVC/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/ss11_MVC/.gradle/6.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../src/ss11_MVC/.gradle/6.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/ss11_MVC/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../src/ss11_MVC/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/ss11_MVC/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../src/ss11_MVC/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/ss11_MVC/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../src/ss11_MVC/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/ss11_MVC/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../src/ss11_MVC/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/ss11_MVC/build/classes/java/main/controller/ProductServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../src/ss11_MVC/build/classes/java/main/controller/ProductServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/ss11_MVC/build/classes/java/main/repository/impl/ProductRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../src/ss11_MVC/build/classes/java/main/repository/impl/ProductRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/ss11_MVC/build/classes/java/main/service/IProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../src/ss11_MVC/build/classes/java/main/service/IProductService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/ss11_MVC/build/classes/java/main/service/impl/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../src/ss11_MVC/build/classes/java/main/service/impl/ProductService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/ss11_MVC/build/libs/ss11_MVC-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../src/ss11_MVC/build/libs/ss11_MVC-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/ss11_MVC/src/main/java/controller/ProductServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/ss11_MVC/src/main/java/controller/ProductServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/ss11_MVC/src/main/java/repository/impl/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/ss11_MVC/src/main/java/repository/impl/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/ss11_MVC/src/main/java/service/IProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/ss11_MVC/src/main/java/service/IProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/ss11_MVC/src/main/java/service/impl/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/ss11_MVC/src/main/java/service/impl/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/ss11_MVC/src/main/webapp/view/product/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../src/ss11_MVC/src/main/webapp/view/product/edit.jsp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2HDDH5UNjUm1HJwKdXHLEP3p8Jl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../src" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9937b04d-4a78-4f14-ae8a-4150ed51b7d2" name="Default Changelist" comment="" />
+      <created>1667810669965</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667810669965</updated>
+      <workItem from="1667810671300" duration="23000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="163" key="FileChooserDialogImpl" timestamp="1667810693339">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="549" y="163" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1667810693339" />
+  </component>
+</project>

@@ -1,4 +1,4 @@
-package repository.impl;
+package repository;
 
 public interface IContractRepository {
 }
