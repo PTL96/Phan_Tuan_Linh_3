@@ -1,5 +1,6 @@
 package model;
 
+
 public class Facility {
     private int id;
     private String name;
@@ -12,9 +13,20 @@ public class Facility {
     private String descriptionOther;
     private double poolArea;
     private int numberOfFloors;
-    private String facility;
+    private String facilityFree;
 
-    public Facility() {
+    public Facility(String name, int area, double cost, int maxPeople, int rendTypeId, int facilityTypeId, String standardRoom, String descriptionOther, double poolArea, int numberOfFloors, String facilityFree) {
+        this.name = name;
+        this.area = area;
+        this.cost = cost;
+        this.maxPeople = maxPeople;
+        this.rendTypeId = rendTypeId;
+        this.facilityTypeId = facilityTypeId;
+        this.standardRoom = standardRoom;
+        this.descriptionOther = descriptionOther;
+        this.poolArea = poolArea;
+        this.numberOfFloors = numberOfFloors;
+        this.facilityFree = facilityFree;
     }
 
     public Facility(int id, String name, int area, double cost, int maxPeople, int rendTypeId, int facilityTypeId, String standardRoom, String descriptionOther, double poolArea, int numberOfFloors, String facility) {
@@ -29,7 +41,11 @@ public class Facility {
         this.descriptionOther = descriptionOther;
         this.poolArea = poolArea;
         this.numberOfFloors = numberOfFloors;
-        this.facility = facility;
+        this.facilityFree = facility;
+    }
+
+    public Facility() {
+
     }
 
     public int getId() {
@@ -120,11 +136,13 @@ public class Facility {
         this.numberOfFloors = numberOfFloors;
     }
 
-    public String getFacility() {
-        return facility;
+    public String getFacilityFree() {
+        return facilityFree;
     }
 
     public void setFacility(String facility) {
-        this.facility = facility;
+        this.facilityFree = facility;
     }
+
+
 }

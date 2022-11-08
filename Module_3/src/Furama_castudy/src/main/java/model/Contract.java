@@ -77,4 +77,7 @@ public class Contract {
     public void setFacilityId(int facilityId) {
         this.facilityId = facilityId;
     }
+
+
+
 }

@@ -74,15 +74,10 @@
           </form>
         </li>
         <li class="nav-item">
-          <form action="http://localhost:63343/src/CASTUDY_SERVLET_M3/customer.html?_ijt=k31ic79c9n1ah8bclf03tiajsq">
             <button type="submit" class="btn btn-dark" style="margin-left: 10px">Customer</button>
-          </form>
         </li>
         <li class="nav-item">
-          <form action="http://localhost:63343/src/CASTUDY_SERVLET_M3/facility.html?_ijt=k31ic79c9n1ah8bclf03tiajsq">
-            <button type="submit" class="btn btn-dark" style="margin-left: 10px">Facility</button>
-
-          </form>
+          <a href="/facility"> <button type="submit" class="btn btn-dark" style="margin-left: 10px">Facility</button></a>
         </li>
         <li class="nav-item">
           <form action="http://localhost:63343/src/CASTUDY_SERVLET_M3/contract.html?_ijt=gf3ht80579ddqjesj3ocnjm20v">

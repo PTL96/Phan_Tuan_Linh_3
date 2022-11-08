@@ -1,4 +1,9 @@
 package repository.impl;
 
-public class ContracRepository {
+import repository.IContractRepository;
+
+
+
+public class ContracRepository implements IContractRepository {
+
 }
