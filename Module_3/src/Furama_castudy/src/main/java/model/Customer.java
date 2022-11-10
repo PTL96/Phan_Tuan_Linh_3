@@ -1,13 +1,10 @@
 package model;
-
-import java.util.Date;
-
 public class Customer {
     private int id;
-    private int customerTypeId;
+    private int typeId;
     private String name;
     private String dayOfBirth;
-    private int gender;
+    private String gender;
     private String idCard;
     private String phoneNumber;
     private String email;
@@ -16,9 +13,20 @@ public class Customer {
     public Customer() {
     }
 
-    public Customer(int id, int customerTypeId, String name, String dayOfBirth, int gender, String idCard, String phoneNumber, String email, String address) {
+    public Customer(int id, int typeId, String name, String dayOfBirth, String gender, String idCard, String phoneNumber, String email, String address) {
         this.id = id;
-        this.customerTypeId = customerTypeId;
+        this.typeId = typeId;
+        this.name = name;
+        this.dayOfBirth = dayOfBirth;
+        this.gender = gender;
+        this.idCard = idCard;
+        this.phoneNumber = phoneNumber;
+        this.email = email;
+        this.address = address;
+    }
+
+    public Customer(int typeId, String name, String dayOfBirth, String gender, String idCard, String phoneNumber, String email, String address) {
+        this.typeId = typeId;
         this.name = name;
         this.dayOfBirth = dayOfBirth;
         this.gender = gender;
@@ -36,12 +44,12 @@ public class Customer {
         this.id = id;
     }
 
-    public int getCustomerTypeId() {
-        return customerTypeId;
+    public int getTypeId() {
+        return typeId;
     }
 
-    public void setCustomerTypeId(int customerTypeId) {
-        this.customerTypeId = customerTypeId;
+    public void setTypeId(int typeId) {
+        this.typeId = typeId;
     }
 
     public String getName() {
@@ -60,11 +68,11 @@ public class Customer {
         this.dayOfBirth = dayOfBirth;
     }
 
-    public int getGender() {
+    public String getGender() {
         return gender;
     }
 
-    public void setGender(int gender) {
+    public void setGender(String gender) {
         this.gender = gender;
     }
 

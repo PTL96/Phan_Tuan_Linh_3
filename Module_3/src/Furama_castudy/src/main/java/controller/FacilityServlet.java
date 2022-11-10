@@ -1,7 +1,6 @@
 package controller;
-
 import model.Facility;
-import service.FacilityService;
+import service.impl.FacilityService;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -26,17 +25,13 @@ public class FacilityServlet extends HttpServlet {
         if (action == null) {
             action = "";
         }
-
         try {
             switch (action) {
-                case "create":
-                    showNewForm(request, response);
+                case "insert":
+                    insertFacility(request,response);
                     break;
                 case "delete":
                     deleteFacility(request, response);
-                    break;
-                case "insert":
-                    insertFacility(request,response);
                     break;
                 case "update":
                     updateFacility(request,response);
@@ -58,12 +53,11 @@ public class FacilityServlet extends HttpServlet {
 
         try {
             switch (action) {
-
+                case "create":
+                    showNewForm(request, response);
+                    break;
                 case "edit":
                     showEditForm(request, response);
-                    break;
-                case "insert":
-                    insertFacility(request,response);
                     break;
                 default:
                     listFacility(request, response);
@@ -93,11 +87,33 @@ public class FacilityServlet extends HttpServlet {
 
     private void showEditForm(HttpServletRequest request, HttpServletResponse response)
             throws SQLException, ServletException, IOException {
+//        int id = Integer.parseInt(request.getParameter("show"));
+//        Facility existingFacility = facilityService.selectFacility(id);
+//        RequestDispatcher dispatcher = request.getRequestDispatcher("facility_view/edit.jsp");
+//        request.setAttribute("facility", existingFacility);
+//        dispatcher.forward(request, response);
         int id = Integer.parseInt(request.getParameter("id"));
-        Facility existingFacility = facilityService.selectFacility(id);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("facility_view/edit.jsp");
-        request.setAttribute("user", existingFacility);
-        dispatcher.forward(request, response);
+        List<Facility> facilityList=facilityService.selectAllFacility();
+        Facility facility= null;
+        String str="";
+        for (Facility facility1:facilityList){
+            if (facility1.getId()==id){
+                facility=facility1;
+                break;
+            }
+        }
+        request.setAttribute("name",facility.getName());
+        request.setAttribute("area",facility.getArea());
+        request.setAttribute("cost", facility.getCost());
+        request.setAttribute("max_people",facility.getMaxPeople());
+        request.setAttribute("rend_type_id",facility.getRendTypeId());
+        request.setAttribute("facility_type_id",facility.getFacilityFree());
+        request.setAttribute("standard_room",facility.getStandardRoom());
+        request.setAttribute("description_other_convenience",facility.getDescriptionOther());
+        request.setAttribute("pool_area",facility.getPoolArea());
+        request.setAttribute("number_of_floors",facility.getNumberOfFloors());
+        request.setAttribute("facility_free",facility.getFacilityFree());
+        request.getRequestDispatcher("facility_view/edit.jsp");
 
     }
 
@@ -116,8 +132,7 @@ public class FacilityServlet extends HttpServlet {
         String facilityFree =request.getParameter("facility_free");
         Facility facility = new Facility(name,area,cost,maxPeople,rendTypeId,facilityTypeId,standardRoom,descriptionOther,poolArea,numberOfFloors,facilityFree);
         facilityService.insertFacility(facility);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("facility_view/create.jsp");
-        dispatcher.forward(request, response);
+        listFacility(request,response);
     }
 
     private void updateFacility(HttpServletRequest request, HttpServletResponse response)
@@ -135,13 +150,12 @@ public class FacilityServlet extends HttpServlet {
         String facilityFree =request.getParameter("facility_free");
         Facility book = new Facility(name,area,cost,maxPeople,rendTypeId,facilityTypeId,standardRoom,descriptionOther,poolArea,numberOfFloors,facilityFree);
         facilityService.updateFacility(book);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("facility_view/edit.jsp");
-        dispatcher.forward(request, response);
+        listFacility(request,response);
     }
 
     private void deleteFacility(HttpServletRequest request, HttpServletResponse response)
             throws SQLException, IOException, ServletException {
-        int id = Integer.parseInt(request.getParameter("id"));
+        int id = Integer.parseInt(request.getParameter("deleteId"));
         facilityService.deleteFacility(id);
 
         List<Facility> listFacility = facilityService.selectAllFacility();

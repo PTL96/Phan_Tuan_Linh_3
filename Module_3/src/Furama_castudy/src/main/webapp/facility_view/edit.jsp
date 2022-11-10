@@ -19,72 +19,73 @@
 </div>
 
 <div align="center">
-    <form action="/facility?action=update" method="post">
+    <form action="/facility" method="post">
+        <input type="hidden" name="action" value="update">
         <table border="1" cellpadding="5">
             <tr>
                 <th>Tên dịch vụ:</th>
                 <td>
-                    <input type="text" name="name" id="ten" size="45"/>
+                    <input type="text" name="name" size="45" value="${name}">
                 </td>
             </tr>
             <tr>
                 <th>Diện tích:</th>
                 <td>
-                    <input type="text" name="dien tich" id="dien tich" size="45"/>
+                    <input type="text" name="area" size="45" value="${area}"/>
                 </td>
             </tr>
             <tr>
                 <th>Giá:</th>
                 <td>
-                    <input type="text" name="gia" id="gia" size="45"/>
+                    <input type="text" name="cost" size="45" value="${cost}"/>
                 </td>
             </tr>
             <tr>
                 <th>Số người:</th>
                 <td>
-                    <input type="text" name="so nguoi" id="so nguoi" size="45"/>
+                    <input type="text" name="max_people" size="45" value="${max_people}"/>
                 </td>
             </tr>
             <tr>
                 <th>Kiểu thuê ID:</th>
                 <td>
-                    <input type="text" name="kieu thue ID" id="kieu thue ID" size="45"/>
+                    <input type="text" name="rend_type_id" size="45" value="${rend_type_id}"/>
                 </td>
             </tr>
             <tr>
                 <th>Kiểu dịch vụ ID:</th>
                 <td>
-                    <input type="text" name="kieu dich vu" id="kieu dich vu ID" size="45"/>
+                    <input type="text" name="facility_type_id"  size="45" value="${facility_type_id}"/>
                 </td>
             </tr>
             <tr>
                 <th>Kiểu phòng:</th>
                 <td>
-                    <input type="text" name="kieu phong" id="kieu phong" size="45"/>
+                    <input type="text" name="standard_room" size="45" value="${standard_room}"/>
                 </td>
             </tr>
             <tr>
                 <th>Mô tả:</th>
                 <td>
-                    <input type="text" name="mo ta" id="mo ta" size="45"/>
+                    <input type="text" name="description_other_convenience" size="45" value="${description_other_convenience}"/>
                 </td>
             </tr>
             <tr>
                 <th>Diện tích bể bơi:</th>
                 <td>
-                    <input type="text" name="dien tich be boi" id="dien tich be boi" size="45"/>
+                    <input type="text" name="pool_area" size="45" value="${pool_area}"/>
                 </td>
             </tr>
             <tr>
                 <th>Số tầng:</th>
                 <td>
-                    <input type="text" name="so tang" id="so tang" size="45"/>
+                    <input type="text" name="number_of_floors" size="45" value="${number_of_floors}"/>
                 </td>
             </tr>
             <tr>
                 <th>Dịch vụ miễn phí:</th>
                 <td>
-                    <input type="text" name="dich vu mien phi" id="dich vu mien phi" size="45"/>
+                    <input type="text" name="facility_free" size="45" value="${facility_free}"/>
                 </td>
             </tr>
 
@@ -98,6 +99,7 @@
                 <input type="submit" value="Hủy">
             </td>
         </tr>
+
     </form>
 
 </div>

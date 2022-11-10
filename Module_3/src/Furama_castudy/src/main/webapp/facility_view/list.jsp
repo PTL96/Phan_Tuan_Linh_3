@@ -25,7 +25,8 @@
 </div>
 <div>
     <div class="bg-success">
-        <form action="/facility?action=create" method="post">
+        <form action="/facility">
+            <input type="hidden" name="action" value="create">
             <button type="submit" class="btn btn-danger" style="font-size: 13px; float: right">Thêm mới</button>
         </form>
         <h3 style="text-align: center">FACILITY</h3>
@@ -67,9 +68,11 @@
             <td style="text-align: center">${facility.getFacilityFree()}</td>
 
             <td style="text-align: center">
-                <a href="/facility?action=edit">
-                    <button type="submit" class="btn btn-outline-success" style="font-size: 13px">Edit</button>
-                </a>
+                <form action="/facility">
+                    <input type="hidden" name="action" value="edit">
+                    <input type="hidden" name="id" value="${facility.getId()}">
+                    <button  type="submit" class="btn btn-danger" style="font-size: 13px; float: right">Sửa</button>
+                </form>
             </td>
             <td style="text-align: center">
 
@@ -86,31 +89,32 @@
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
+        <form action="/facility" method="post">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Xóa Thông tin dịch vụ</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-
+                <input type="text" hidden name="action" value="delete">
+                <input type="text" id="deleteId" hidden name="deleteId">
+                <span>Bạn có chắc muốn xóa !</span>
             </div>
-            <form action="/facility" method="post">
+
                 <div class="modal-footer">
 
-                    <input type="text" id="deleteId" hidden name="deleteName">
-                    <input type="text" id="action" hidden name="delete">
-                    <span>Bạn có chắc muốn xóa !</span>
+
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     <button type="submit" class="btn btn-primary">Delete</button>
                 </div>
-            </form>
 
         </div>
+        </form>
+
     </div>
 </div>
 <script>
     function infoDelete(id,name) {
-        alert(id+name)
         document.getElementById("deleteId").value = id;
         document.getElementById("deleteName").innerText = name;
 

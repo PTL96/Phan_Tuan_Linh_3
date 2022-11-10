@@ -74,7 +74,9 @@
           </form>
         </li>
         <li class="nav-item">
+          <a href="/customer">
             <button type="submit" class="btn btn-dark" style="margin-left: 10px">Customer</button>
+          </a>
         </li>
         <li class="nav-item">
           <a href="/facility"> <button type="submit" class="btn btn-dark" style="margin-left: 10px">Facility</button></a>

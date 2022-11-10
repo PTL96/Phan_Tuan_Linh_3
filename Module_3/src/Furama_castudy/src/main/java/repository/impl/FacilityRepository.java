@@ -12,7 +12,7 @@ public class FacilityRepository implements IFacilityRepository {
     private String jdbcUsername = "root";
     private String jdbcPassword = "Ptl451996";
 
-    private static final String INSERT_USERS_SQL = "insert into facility (name, area, cost max_people, rent_type_id, facility_type_id, standard_room, description_other_convenience, pool_area, number_of_floors, facility_free) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
+    private static final String INSERT_USERS_SQL = "insert into facility (name, area, cost, max_people, rent_type_id, facility_type_id, standard_room, description_other_convenience, pool_area, number_of_floors, facility_free) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
     private static final String SELECT_USER_BY_ID = "select id, name, area, cost, max_people, rent_type_id, facility_type_id, standard_room, description_other_convenience, pool_area, number_of_floors, facility_free from facility where id =?";
     private static final String SELECT_ALL_USERS = "select * from facility";
     private static final String DELETE_USERS_SQL = "delete from facility where id = ?;";
