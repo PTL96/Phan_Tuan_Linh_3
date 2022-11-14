@@ -16,11 +16,18 @@
 <body>
 <div class="bg-success">
     <h1 style="text-align: center">Sửa Dịch Vụ</h1>
+    <a href="/customer">
+        <button type="submit" class="btn btn-dark" style="font-size: 13px">Quay lại</button>
+    </a>
+    <c:if test="${mess!=null}">
+        <span style="color: #ff0000" >${mess}</span>
+    </c:if>
 </div>
 
 <div align="center">
-    <form action="/customer" method="post">
-        <input type="hidden" name="action" value="update">
+    <form method="post" action="/customer?action=update&id=${customer.getId()}">
+<%--    <form action="/customer" method="post">--%>
+<%--        <input type="hidden" name="action" value="update">--%>
         <table border="1" cellpadding="5">
             <tr>
                 <th>Loại khách:</th>
@@ -70,14 +77,12 @@
                     <input type="text" name="address" size="45" value="${customer.address}"/>
                 </td>
             </tr>
-
-
         </table>
         <tr>
             <td colspan="2" style="margin-right: 30px">
                 <input type="submit" value="Lưu">
-
             </td>
+
             <td colspan="2" align="center">
                 <input type="submit" value="Hủy">
             </td>

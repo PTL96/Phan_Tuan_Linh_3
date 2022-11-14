@@ -69,9 +69,9 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <form action="http://localhost:63343/src/CASTUDY_SERVLET_M3/employee.html?_ijt=2c09ietlg94iinlhke3uuvah3o">
+          <a href="/employee">
             <button type="submit" class="btn btn-dark" style="margin-left: 10px">Employee</button>
-          </form>
+          </a>
         </li>
         <li class="nav-item">
           <a href="/customer">

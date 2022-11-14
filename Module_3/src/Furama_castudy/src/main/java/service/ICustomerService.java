@@ -1,11 +1,10 @@
 package service;
 
-import model.Customer;
+import model.customer.Customer;
 
 import java.util.List;
 
 public interface ICustomerService {
-    boolean updateCustomer(Customer customer);
 
     void addCustomer(Customer customer);
 
@@ -16,4 +15,6 @@ public interface ICustomerService {
     boolean deleteCustomer(int id);
 
     Customer findById(int id);
+
+    boolean updateCustomer(int id, Customer customer);
 }

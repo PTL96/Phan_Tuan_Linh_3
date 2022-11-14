@@ -17,8 +17,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
 <body>
-<form action="/facility">
-    <button type="submit" class="btn btn-dark" style="float: left; font-size: 13px">Back</button>
+<form action="/index.jsp">
+    <button type="submit" class="btn btn-dark" style="float: left; font-size: 13px">Quay lại</button>
 </form>
 <div>
 
@@ -89,10 +89,10 @@
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-        <form action="/facility" method="post">
+        <form action="/employee" method="post">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Xóa Thông tin dịch vụ</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Xóa Thông Tin Nhân Viên</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">

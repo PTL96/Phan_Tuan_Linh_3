@@ -12,12 +12,11 @@ public class Employee {
     private int positionId;
     private int educationDegreeId;
     private int divisionId;
-    private String userName;
 
     public Employee() {
     }
 
-    public Employee(int id, String name, String dayOfBirth, String idCard, double salary, String phoneNumber, String email, String address, int positionId, int educationDegreeId, int divisionId, String userName) {
+    public Employee(int id, String name, String dayOfBirth, String idCard, double salary, String phoneNumber, String email, String address, int positionId, int educationDegreeId, int divisionId) {
         this.id = id;
         this.name = name;
         this.dayOfBirth = dayOfBirth;
@@ -29,7 +28,19 @@ public class Employee {
         this.positionId = positionId;
         this.educationDegreeId = educationDegreeId;
         this.divisionId = divisionId;
-        this.userName = userName;
+    }
+
+    public Employee(String name, String dayOfBirth, String idCard, double salary, String phoneNumber, String email, String address, int positionId, int educationDegreeId, int divisionId) {
+        this.name = name;
+        this.dayOfBirth = dayOfBirth;
+        this.idCard = idCard;
+        this.salary = salary;
+        this.phoneNumber = phoneNumber;
+        this.email = email;
+        this.address = address;
+        this.positionId = positionId;
+        this.educationDegreeId = educationDegreeId;
+        this.divisionId = divisionId;
     }
 
     public int getId() {
@@ -118,13 +129,5 @@ public class Employee {
 
     public void setDivisionId(int divisionId) {
         this.divisionId = divisionId;
-    }
-
-    public String getUserName() {
-        return userName;
-    }
-
-    public void setUserName(String userName) {
-        this.userName = userName;
     }
 }

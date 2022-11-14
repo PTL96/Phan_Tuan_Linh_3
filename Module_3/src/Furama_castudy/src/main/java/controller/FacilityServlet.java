@@ -81,7 +81,7 @@ public class FacilityServlet extends HttpServlet {
 
     private void showNewForm(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        RequestDispatcher dispatcher = request.getRequestDispatcher("facility_view/create.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("facility_view/edit.jsp");
         dispatcher.forward(request, response);
     }
 

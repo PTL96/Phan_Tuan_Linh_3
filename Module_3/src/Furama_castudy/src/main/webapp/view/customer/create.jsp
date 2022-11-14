@@ -10,22 +10,34 @@
 <html>
 <head>
     <title>khach-hang-furama</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
 </head>
 <body>
 <div class="bg-success">
+
     <h1 style="text-align: center">Thêm Mới Khách Hàng</h1>
+
 </div>
 
 <div align="center">
-    <form action="/customer?action=add" method="post">
-<%--        <input type="hidden" name="action" value="add">--%>
+
+    <form action="/customer" method="post">
+        <input type="hidden" name="action" value="add">
         <table border="1" cellpadding="5">
             <tr>
                 <th>Loại khách:</th>
                 <td>
-                    <input type="text" name="customer_type_id" size="45"/>
+                    <select class="form-select" aria-label="Default select example" id="formInput1" name="customerType" id="customerType">
+                        <option value="Hãy chọn loại khách hàng" selected>Hãy chọn loại khách hàng</option>
+                        <c:forEach var="customerType" items="${customerTypeList}">
+                            <option value="${customerType.getId()}">${customerType.getName()}</option>
+                        </c:forEach>
+                    </select>
+<%--                    <input type="text" name="customer_type_id" size="45"/>--%>
                 </td>
             </tr>
             <tr>
@@ -55,7 +67,7 @@
             <tr>
                 <th>Số điện thoại:</th>
                 <td>
-                    <input type="text" name="phone_number"  size="45"/>
+                    <input type="text" name="phone_number" size="45"/>
                 </td>
             </tr>
             <tr>
@@ -73,13 +85,16 @@
 
         </table>
         <tr>
-            <td colspan="2" style="margin-right: 30px">
-                <input type="submit" value="Lưu">
 
+            <td>
+                <a href="/customer">
+                    <button type="button" class="btn btn-dark" style="font-size: 13px">Hủy</button>
+                </a>
             </td>
-            <td colspan="2" align="center">
-                <input type="submit" value="Hủy">
+            <td>
+                <button type="submit" class="btn btn-danger" style="font-size: 13px">Lưu</button>
             </td>
+
         </tr>
 
     </form>

@@ -17,9 +17,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
 <body>
-<a href="/customer">
-    <button type="submit" class="btn btn-dark" style="float: left; font-size: 13px">Quay lại</button>
-</a>
+ <a href="/index.jsp">
+    <button type="button" class="btn btn-dark" style="float: left; font-size: 13px">Quay lại</button>
+ </a>
 <div>
     <div class="bg-success">
         <form action="/customer">
@@ -33,7 +33,6 @@
         <thead>
         <tr style="font-size: 15px">
             <th scope="col" style="text-align: center">#</th>
-<%--            <th scope="col" style="text-align: center">id</th>--%>
             <th scope="col" style="text-align: center">Loại Khách</th>
             <th scope="col" style="text-align: center">Tên Khách Hàng</th>
             <th scope="col" style="text-align: center">Ngày Sinh</th>
@@ -50,18 +49,10 @@
         <c:forEach var="customer" items="${customerList}" varStatus="status">
             <tr style="font-size: 13px">
                 <th scope="row" style="text-align: center">${status.count}</th>
-<%--                <td style="text-align: center">${customer.getId()}</td>--%>
-                <td style="text-align: center">${customer.getTypeId()}</td>
+                <td style="text-align: center">${customer.getNameCustomer()}</td>
                 <td style="text-align: center">${customer.getName()}</td>
                 <td style="text-align: center">${customer.getDayOfBirth()}</td>
-                <td style="text-align: center">
-                <c:if test="${(customer.getGender()==1)}">
-                  <span>Nam</span>
-                </c:if>
-                <c:if test="${(customer.getGender()==0)}">
-                  <span>Nữ</span>
-                </c:if>
-                </td>
+                <td style="text-align: center">${customer.getGender()}</td>
                 <td style="text-align: center">${customer.getIdCard()}</td>
                 <td style="text-align: center">${customer.getPhoneNumber()}</td>
                 <td style="text-align: center">${customer.getEmail()}</td>
@@ -98,7 +89,7 @@
                 <div class="modal-body">
                     <input type="text" hidden name="action" value="delete">
                     <input type="text" id="deleteId" hidden name="deleteId">
-                    <span>Bạn có chắc muốn xóa !</span>
+                    <span style="color: red">Bạn có chắc muốn xóa !</span>
                 </div>
 
                 <div class="modal-footer">

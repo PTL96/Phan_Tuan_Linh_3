@@ -25,67 +25,67 @@
             <tr>
                 <th>Tên dịch vụ:</th>
                 <td>
-                    <input type="text" name="name" size="45" value="${name}">
+                    <input type="text" name="name" size="45" value="${facility.getNam}">
                 </td>
             </tr>
             <tr>
                 <th>Diện tích:</th>
                 <td>
-                    <input type="text" name="area" size="45" value="${area}"/>
+                    <input type="text" name="area" size="45" value="${facility.getArea}"/>
                 </td>
             </tr>
             <tr>
                 <th>Giá:</th>
                 <td>
-                    <input type="text" name="cost" size="45" value="${cost}"/>
+                    <input type="text" name="cost" size="45" value="${facility.getCost}"/>
                 </td>
             </tr>
             <tr>
                 <th>Số người:</th>
                 <td>
-                    <input type="text" name="max_people" size="45" value="${max_people}"/>
+                    <input type="text" name="max_people" size="45" value="${facility.getMaxPeople}"/>
                 </td>
             </tr>
             <tr>
                 <th>Kiểu thuê ID:</th>
                 <td>
-                    <input type="text" name="rend_type_id" size="45" value="${rend_type_id}"/>
+                    <input type="text" name="rend_type_id" size="45" value="${facility.getRendTypeId}"/>
                 </td>
             </tr>
             <tr>
                 <th>Kiểu dịch vụ ID:</th>
                 <td>
-                    <input type="text" name="facility_type_id"  size="45" value="${facility_type_id}"/>
+                    <input type="text" name="facility_type_id"  size="45" value="${facility.getFacilityTypeId}"/>
                 </td>
             </tr>
             <tr>
                 <th>Kiểu phòng:</th>
                 <td>
-                    <input type="text" name="standard_room" size="45" value="${standard_room}"/>
+                    <input type="text" name="standard_room" size="45" value="${facility.getStandardRoom}"/>
                 </td>
             </tr>
             <tr>
                 <th>Mô tả:</th>
                 <td>
-                    <input type="text" name="description_other_convenience" size="45" value="${description_other_convenience}"/>
+                    <input type="text" name="description_other_convenience" size="45" value="${facility.getDescriptionOther}"/>
                 </td>
             </tr>
             <tr>
                 <th>Diện tích bể bơi:</th>
                 <td>
-                    <input type="text" name="pool_area" size="45" value="${pool_area}"/>
+                    <input type="text" name="pool_area" size="45" value="${facility.getPoolArea}"/>
                 </td>
             </tr>
             <tr>
                 <th>Số tầng:</th>
                 <td>
-                    <input type="text" name="number_of_floors" size="45" value="${number_of_floors}"/>
+                    <input type="text" name="number_of_floors" size="45" value="${facility.getNumberOfFloors}"/>
                 </td>
             </tr>
             <tr>
                 <th>Dịch vụ miễn phí:</th>
                 <td>
-                    <input type="text" name="facility_free" size="45" value="${facility_free}"/>
+                    <input type="text" name="facility_free" size="45" value="${facility.getFacilityFree}"/>
                 </td>
             </tr>
 
